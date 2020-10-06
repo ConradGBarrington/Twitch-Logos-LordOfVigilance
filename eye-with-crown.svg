@@ -1,0 +1,24 @@
+<svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 10 30 
+                C 50 10, 50 10, 90 30
+                M 90 30
+                C 50 50, 50 50, 10 30" fill="white"/>
+        <g>
+        <circle cx="50" cy="30" r="16" fill="#cc66ff"/>
+        <circle id="pupil" cx="50" cy="30" r="8" fill="black"/>
+        <path d="M 47 33
+                45.5 28
+                47.5 30.5
+                50 27
+                52.5 30.5
+                54.5 28
+                53 33
+                47 33" 
+                fill="#ffcc00"/>
+        </g>
+        <path d="M 10 30 
+                C 50 9.25, 50 9.25, 90 30
+                M 90 30
+                C 50 50.75, 50 50.75 10 30" 
+                stroke="black" stroke-width="1" stroke-linecap="round" fill="none"/>
+</svg>

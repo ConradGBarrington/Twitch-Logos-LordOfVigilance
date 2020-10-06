@@ -1,0 +1,110 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Logo</h1>
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 10 50 
+                     C 50 30, 50 30, 90 50
+                     M 90 50
+                     C 50 70, 50 70, 10 50" fill="white"/>
+            <g>
+                <circle cx="50" cy="50" r="16" fill="#cc66ff"/>
+                <circle id="pupil" cx="50" cy="50" r="6" fill="black">
+                    <animate 
+                    attributeName="r"
+                    from="6"
+                    to="9" 
+                    dur="15s"
+                    values="6; 9; 6"
+                    keyTimes="0; 0.5; 1"
+                    repeatCount="indefinite"
+                    fill="freeze" 
+                    id="pupil-expand"/>
+                </circle>
+                <path d="M 47 53
+                        45.5 48
+                        47.5 50.5
+                        50 47
+                        52.5 50.5
+                        54.5 48
+                        53 53
+                        47 53" 
+                        fill="#ffcc00">
+                    <animate
+                        attributeName="fill"
+                        dur="15s"
+                        values="black; #ffcc00; black"
+                        keyTimes="0; 0.5; 1"
+                        repeatCount="indefinite"
+                    />
+                </path>
+                <animateMotion dur="10s" repeatCount="indefinite"
+                path="M-10,0 C-10,-10 10,10 10,0 C10,-10 -10,10 -10,0" />
+            </g>
+            <path d="M 10 50 
+                     C 50 29.25, 50 29.25, 90 50
+                     M 90 50
+                     90 30
+                     10 30
+                     10 50" 
+                    fill="#6ED1E4"/>
+
+            <path d="M 10 50 
+                    C 50 70.75, 50 70.75 90 50
+                    M 90 50
+                    90 70
+                    10 70
+                    10 50" 
+                   fill="#6ED1E4"/>
+            <path d="M 10 50 
+                     C 50 29.25, 50 29.25, 90 50
+                     M 90 50
+                     C 50 70.75, 50 70.75 10 50" 
+                    stroke="black" stroke-width="1" stroke-linecap="round" fill="none"/>
+            <!-- <path d="M40,50 C40,40 60,60 60,50 C60,40 40,60 40,50" stroke="green" stroke-width="0.1" fill="none"/> -->
+        </svg>
+        <h1>Name & Logo</h1>
+        <div class="name-logo">
+            <p class="name">LordOfVigilance</p>
+            <img class="symbol" src="eye-with-crown.svg" alt="The lord's eye">
+        </div>
+        
+
+
+        <style>
+            body {
+                background-color: #6ED1E4;
+            }
+
+            @font-face {
+                font-family: Vollkorn;
+                src: url(VollkornSC-Regular.ttf);
+            }
+
+
+            svg {
+                width: 500px;
+            }
+
+            .name-logo{
+                display: flex;
+            }
+
+            .name {
+                display: inline-block;
+                font-size: 90px;
+                margin-top: 10px;
+                font-family: Vollkorn;
+            }
+
+            .symbol {
+                display: inline-block;
+                height: 100px;
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+        </style>
+    </body>
+</html>
